@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export const AcmeLogo = ({
+export const Logo = ({
   width = 36,
   height = 36,
   ...rest
