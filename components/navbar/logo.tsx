@@ -3,7 +3,7 @@ export const AcmeLogo = () => (
       className=""
       fill="none"
       height="36"
-      viewBox="0 0 32 32"
+      viewBox="0 0 40 40"
       width="36"
       xmlns="http://www.w3.org/2000/svg"
    >
