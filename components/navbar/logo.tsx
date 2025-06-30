@@ -7,15 +7,9 @@ export const AcmeLogo = () => (
       width="36"
       xmlns="http://www.w3.org/2000/svg"
    >
-      <rect fill="var(--secondary)" height="100%" rx="16" width="100%" />
-     
-     <!-- ядро -->
+      <react fill="var(--secondary)" height="100%" rx="16" width="100%" />
      <circle cx="18" cy="18" r="5" fill="currentColor" />
-   
-     <!-- орбитальная «оболочка» -->
      <circle cx="18" cy="18" r="13" stroke="currentColor" stroke-width="2" />
-   
-     <!-- диагональная орбита для ощущения объёма -->
      <ellipse
        cx="18"
        cy="18"
