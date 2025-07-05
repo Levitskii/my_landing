@@ -19,6 +19,10 @@ export const Hero = () => {
                '@sm': {
                   flexDirection: 'row',
                   mt: '$20',
+                  px: '$32',
+               },
+               '@md': {
+                  px: '$64',
                },
             }}
             justify={'center'}
