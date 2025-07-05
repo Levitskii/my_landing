@@ -38,7 +38,8 @@ export const Hero = () => {
                   }}
                >
                   <Text h1 css={{display: 'inline'}}>
-                     Автоматизация бизнеса с искусственным интеллектом:{' '}
+                     Автоматизация бизнеса с искусственным интеллектом:
+                     <br />
                   </Text>
                   <Text h1 css={{display: 'inline'}} color="primary">
                      +90% к эффективности операций, -30% затрат
@@ -117,7 +118,7 @@ export const Hero = () => {
                   },
                }}
             >
-               <img src="mock.png" />
+               <img src="soliter.png" />
             </Box>
          </Flex>
          <Divider
