@@ -15,10 +15,8 @@ export const Plans = () => {
         align={'center'}
       >
         <Flex direction={'column'} align={'center'}>
-          <Text span css={{ color: '$blue600' }}>
-            Awesome Feature
-          </Text>
-          <Text h2>Flexible Plans</Text>
+          <Text span css={{ color: '$blue600' }}>Раздел услуг</Text>
+          <Text h2>Наши ключевые направления</Text>
         </Flex>
 
         <Flex
@@ -31,54 +29,29 @@ export const Plans = () => {
               <Grid.Container css={{ pl: '$6' }}>
                 <Grid xs={12}>
                   <Text h4 css={{ lineHeight: '$xs' }}>
-                    Free
-                  </Text>
-                </Grid>
-                <Grid xs={12}>
-                  <Text css={{ color: '$accents8' }}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    condimentum, nisl ut aliquam lacinia, elit
+                    Разработка ПО
                   </Text>
                 </Grid>
               </Grid.Container>
             </Card.Header>
             <Card.Body css={{ py: '$4' }}>
-              <Text css={{ display: 'contents' }} h2>
-                $0{' '}
-              </Text>
-              <Text css={{ display: 'contents', color: '$accents8' }}>/mo</Text>
-              <Button css={{ mt: '$7', mb: '$12' }}>Get Started</Button>
-
-              <Divider />
               <Box as={'ul'}>
                 <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
                   <CheckIcon />
                   <Text span css={{ color: '$accents8' }}>
-                    1 Team Members
+                    Веб-приложения и мобильные решения
                   </Text>
                 </Flex>
                 <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
                   <CheckIcon />
                   <Text span css={{ color: '$accents8' }}>
-                    1 Website
+                    Интеграции с Wildberries, Ozon, 1С
                   </Text>
                 </Flex>
                 <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
                   <CheckIcon />
                   <Text span css={{ color: '$accents8' }}>
-                    1 GB Storage
-                  </Text>
-                </Flex>
-                <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
-                  <CheckIcon />
-                  <Text span css={{ color: '$accents8' }}>
-                    1 TB Transfer
-                  </Text>
-                </Flex>
-                <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
-                  <CheckIcon />
-                  <Text span css={{ color: '$accents8' }}>
-                    Email Support
+                    Чат-боты для автоматизации продаж
                   </Text>
                 </Flex>
               </Box>
@@ -89,54 +62,29 @@ export const Plans = () => {
               <Grid.Container css={{ pl: '$6' }}>
                 <Grid xs={12}>
                   <Text h4 css={{ lineHeight: '$xs' }}>
-                    Premiun
-                  </Text>
-                </Grid>
-                <Grid xs={12}>
-                  <Text css={{ color: '$accents8' }}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    condimentum, nisl ut aliquam lacinia, elit
+                    Бизнес-аналитика
                   </Text>
                 </Grid>
               </Grid.Container>
             </Card.Header>
             <Card.Body css={{ py: '$4' }}>
-              <Text css={{ display: 'contents' }} h2>
-                $19{' '}
-              </Text>
-              <Text css={{ display: 'contents', color: '$accents8' }}>/mo</Text>
-              <Button css={{ mt: '$7', mb: '$12' }}>Get Started</Button>
-
-              <Divider />
               <Box as={'ul'}>
                 <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
                   <CheckIcon />
                   <Text span css={{ color: '$accents8' }}>
-                    5 Team Members
+                    Дашборды для контроля KPI
                   </Text>
                 </Flex>
                 <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
                   <CheckIcon />
                   <Text span css={{ color: '$accents8' }}>
-                    5 Website
+                    Прогнозирование спроса и остатков
                   </Text>
                 </Flex>
                 <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
                   <CheckIcon />
                   <Text span css={{ color: '$accents8' }}>
-                    5 GB Storage
-                  </Text>
-                </Flex>
-                <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
-                  <CheckIcon />
-                  <Text span css={{ color: '$accents8' }}>
-                    5 TB Transfer
-                  </Text>
-                </Flex>
-                <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
-                  <CheckIcon />
-                  <Text span css={{ color: '$accents8' }}>
-                    Email Support
+                    Анализ эффективности маркетинга
                   </Text>
                 </Flex>
               </Box>
@@ -147,54 +95,29 @@ export const Plans = () => {
               <Grid.Container css={{ pl: '$6' }}>
                 <Grid xs={12}>
                   <Text h4 css={{ lineHeight: '$xs' }}>
-                    Startup
-                  </Text>
-                </Grid>
-                <Grid xs={12}>
-                  <Text css={{ color: '$accents8' }}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    condimentum, nisl ut aliquam lacinia, elit
+                    Техническая поддержка
                   </Text>
                 </Grid>
               </Grid.Container>
             </Card.Header>
             <Card.Body css={{ py: '$4' }}>
-              <Text css={{ display: 'contents' }} h2>
-                $99{' '}
-              </Text>
-              <Text css={{ display: 'contents', color: '$accents8' }}>/mo</Text>
-              <Button css={{ mt: '$7', mb: '$12' }}>Get Started</Button>
-
-              <Divider />
               <Box as={'ul'}>
                 <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
                   <CheckIcon />
                   <Text span css={{ color: '$accents8' }}>
-                    30 Team Members
+                    Круглосуточный мониторинг систем
                   </Text>
                 </Flex>
                 <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
                   <CheckIcon />
                   <Text span css={{ color: '$accents8' }}>
-                    30 Website
+                    Резервное копирование данных
                   </Text>
                 </Flex>
                 <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
                   <CheckIcon />
                   <Text span css={{ color: '$accents8' }}>
-                    30 GB Storage
-                  </Text>
-                </Flex>
-                <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
-                  <CheckIcon />
-                  <Text span css={{ color: '$accents8' }}>
-                    30 TB Transfer
-                  </Text>
-                </Flex>
-                <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
-                  <CheckIcon />
-                  <Text span css={{ color: '$accents8' }}>
-                    Email Support
+                    Оптимизация работы серверов
                   </Text>
                 </Flex>
               </Box>
@@ -205,57 +128,17 @@ export const Plans = () => {
               <Grid.Container css={{ pl: '$6' }}>
                 <Grid xs={12}>
                   <Text h4 css={{ lineHeight: '$xs' }}>
-                    Entreprise
-                  </Text>
-                </Grid>
-                <Grid xs={12}>
-                  <Text css={{ color: '$accents8' }}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    condimentum, nisl ut aliquam lacinia, elit
+                    Спецпредложение
                   </Text>
                 </Grid>
               </Grid.Container>
             </Card.Header>
             <Card.Body css={{ py: '$4' }}>
-              <Text css={{ display: 'contents' }} h2>
-                $199{' '}
+              <Text css={{ color: '$accents8', mb: '$8' }}>
+                Бесплатный экспресс-аудит 1-2 процессов с отчетом о точках роста и
+                расчетом экономии.
               </Text>
-              <Text css={{ display: 'contents', color: '$accents8' }}>/mo</Text>
-              <Button css={{ mt: '$7', mb: '$12' }}>Get Started</Button>
-
-              <Divider />
-              <Box as={'ul'}>
-                <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
-                  <CheckIcon />
-                  <Text span css={{ color: '$accents8' }}>
-                    100 Team Members
-                  </Text>
-                </Flex>
-                <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
-                  <CheckIcon />
-                  <Text span css={{ color: '$accents8' }}>
-                    100 Website
-                  </Text>
-                </Flex>
-                <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
-                  <CheckIcon />
-                  <Text span css={{ color: '$accents8' }}>
-                    100 GB Storage
-                  </Text>
-                </Flex>
-                <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
-                  <CheckIcon />
-                  <Text span css={{ color: '$accents8' }}>
-                    100 TB Transfer
-                  </Text>
-                </Flex>
-                <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
-                  <CheckIcon />
-                  <Text span css={{ color: '$accents8' }}>
-                    Email Support
-                  </Text>
-                </Flex>
-              </Box>
+              <Button css={{ mt: '$4' }}>Заказать аудит</Button>
             </Card.Body>
           </Card>
         </Flex>
