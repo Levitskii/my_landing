@@ -1,18 +1,22 @@
 export const AcmeLogo = () => (
-   <svg
-      className=""
+  <svg
+    width="36"
+    height="36"
+    viewBox="0 0 36 36"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle cx="18" cy="18" r="5" fill="currentColor" />
+    <circle cx="18" cy="18" r="13" stroke="currentColor" strokeWidth="2" />
+    <ellipse
+      cx="18"
+      cy="18"
+      rx="13"
+      ry="4.5"
+      transform="rotate(-40 18 18)"
+      stroke="currentColor"
+      strokeWidth="2"
       fill="none"
-      height="36"
-      viewBox="0 0 32 32"
-      width="36"
-      xmlns="http://www.w3.org/2000/svg"
-   >
-      <rect fill="var(--secondary)" height="100%" rx="16" width="100%" />
-      <path
-         clipRule="evenodd"
-         d="M17.6482 10.1305L15.8785 7.02583L7.02979 22.5499H10.5278L17.6482 10.1305ZM19.8798 14.0457L18.11 17.1983L19.394 19.4511H16.8453L15.1056 22.5499H24.7272L19.8798 14.0457Z"
-         fill="currentColor"
-         fillRule="evenodd"
-      />
-   </svg>
+    />
+  </svg>
 );
