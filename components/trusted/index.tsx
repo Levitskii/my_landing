@@ -10,7 +10,7 @@ export const Trusted = () => {
             direction={'column'}
             align={'center'}
             css={{
-               'pt': '$20',
+               'pt': '$10',
                'px': '$6',
                '@md': {
                   px: '$64',
