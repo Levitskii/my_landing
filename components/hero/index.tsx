@@ -46,9 +46,9 @@ export const Hero = () => {
                     <br />
                   </Text>
                   <Text h1 css={{display: 'inline', fontSize: '2.5rem'}} color="primary">
-                    +90% к эффективности операций,
+                    + 90% к эффективности
                     <br />
-                    -30% затрат
+                    - 30% затрат
                   </Text>
               </Box>
 
