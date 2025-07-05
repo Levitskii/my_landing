@@ -1,4 +1,4 @@
-import {Button, Divider, Input, Text} from '@nextui-org/react';
+import {Button, Divider, Text} from '@nextui-org/react';
 import React from 'react';
 import {CheckIcon} from '../icons/CheckIcon';
 import {Box} from '../styles/box';
@@ -37,30 +37,11 @@ export const Hero = () => {
                      maxWidth: '600px',
                   }}
                >
-                  <Text
-                     h1
-                     css={{
-                        display: 'inline',
-                     }}
-                  >
-                     The modern landing page{' '}
+                  <Text h1 css={{display: 'inline'}}>
+                     Автоматизация бизнеса с искусственным интеллектом:{' '}
                   </Text>
-                  <Text
-                     h1
-                     css={{
-                        display: 'inline',
-                     }}
-                  >
-                     for{' '}
-                  </Text>
-                  <Text
-                     h1
-                     css={{
-                        display: 'inline',
-                     }}
-                     color="primary"
-                  >
-                     React developers
+                  <Text h1 css={{display: 'inline'}} color="primary">
+                     +90% к эффективности операций, -30% затрат
                   </Text>
                </Box>
 
@@ -72,8 +53,7 @@ export const Hero = () => {
                   size={'$lg'}
                   span
                >
-                  The easiest way to build React Landing page in seconds. Save
-                  time and focus on your project.
+                  Разработка IT-решений и оптимизация процессов для e-commerce, маркетплейсов, производства и строительства.
                </Text>
 
                <Flex
@@ -83,8 +63,7 @@ export const Hero = () => {
                   }}
                   wrap={'wrap'}
                >
-                  <Input placeholder="Enter your email address" size="lg" />
-                  <Button>Start Free Trial</Button>
+                  <Button>Получить бесплатный аудит</Button>
                </Flex>
                <Flex
                   wrap={'wrap'}
@@ -102,7 +81,7 @@ export const Hero = () => {
                         alignItems: 'center',
                      }}
                   >
-                     <CheckIcon /> No credit card required.
+                     <CheckIcon /> Запуск пилотных решений за 3 дня
                   </Flex>
                   <Flex
                      css={{
@@ -110,7 +89,7 @@ export const Hero = () => {
                         alignItems: 'center',
                      }}
                   >
-                     <CheckIcon /> 14-day free trial.
+                     <CheckIcon /> Гарантированная окупаемость инвестиций
                   </Flex>
                   <Flex
                      css={{
@@ -118,9 +97,17 @@ export const Hero = () => {
                         alignItems: 'center',
                      }}
                   >
-                     <CheckIcon /> Cancel anytime.
+                     <CheckIcon /> Использование ИИ для снижения расходов
                   </Flex>
-               </Flex>
+                  <Flex
+                     css={{
+                        color: '$accents7',
+                        alignItems: 'center',
+                     }}
+                  >
+                     <CheckIcon /> Аналитика данных в реальном времени
+                  </Flex>
+              </Flex>
             </Box>
             <Box
                css={{
