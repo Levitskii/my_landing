@@ -1,8 +1,7 @@
-import {Divider, Grid, Text} from '@nextui-org/react';
+import {Divider, Text} from '@nextui-org/react';
 import React from 'react';
 import {BoxIcon} from '../icons/BoxIcon';
 import {FeatureIcon} from '../icons/FeatureIcon';
-import {Box} from '../styles/box';
 import {Flex} from '../styles/flex';
 
 export const Features1 = () => {
@@ -26,11 +25,11 @@ export const Features1 = () => {
                },
             }}
          >
-            <Flex direction="column">
+            <Flex direction="column" css={{alignItems: 'flex-start'}}>
                <Text span css={{color: '$blue600'}}>
-                  Awesome Feature
+                  Специализированные решения
                </Text>
-               <Text h3>Your title here</Text>
+               <Text h3>Для вашего бизнеса</Text>
                <Text
                   span
                   css={{
@@ -38,84 +37,53 @@ export const Features1 = () => {
                      color: '$accents8',
                   }}
                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  condimentum, nisl ut aliquam lacinia, nisl nisl aliquet nisl,
-                  nec tincidunt nisl lorem eu nunc. Sed euismod, nisl ut aliquam
-                  lacinia,
+                  От e-commerce до строительства. Мы быстро адаптируем каждое
+                  решение под конкретные процессы вашей компании.
                </Text>
 
-               <Flex
-                  css={{
-                     py: '$10',
-                     gap: '$5',
-                  }}
-               >
-                  <BoxIcon />
-                  <Flex direction={'column'}>
-                     <Text h4 weight={'medium'}>
-                        Your title here
-                     </Text>
-                     <Text
-                        span
-                        css={{
-                           maxWidth: '400px',
-                           color: '$accents8',
-                        }}
-                     >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed condimentum, nisl ut aliquam lacinia, nisl nisl
-                        aliquet nisl,
-                     </Text>
+               <Flex direction="column">
+                  <Flex css={{py: '$10', gap: '$5'}}>
+                     <BoxIcon />
+                     <Flex direction={'column'}>
+                        <Text h4 weight={'medium'}>E-commerce</Text>
+                        <Text span css={{maxWidth: '400px', color: '$accents8'}}>
+                           Автоматизация заказов, Динамическое ценообразование,
+                           Синхронизация остатков
+                        </Text>
+                     </Flex>
+                  </Flex>
+                  <Flex css={{py: '$10', gap: '$5'}}>
+                     <BoxIcon />
+                     <Flex direction={'column'}>
+                        <Text h4 weight={'medium'}>Маркетплейсы</Text>
+                        <Text span css={{maxWidth: '400px', color: '$accents8'}}>
+                           Автобронирование слотов, Аналитика позиций,
+                           Интеграция склада
+                        </Text>
+                     </Flex>
+                  </Flex>
+                  <Flex css={{py: '$10', gap: '$5'}}>
+                     <BoxIcon />
+                     <Flex direction={'column'}>
+                        <Text h4 weight={'medium'}>Производство</Text>
+                        <Text span css={{maxWidth: '400px', color: '$accents8'}}>
+                           Контроль оборудования, Планирование цехов,
+                           Прогноз поломок
+                        </Text>
+                     </Flex>
+                  </Flex>
+                  <Flex css={{py: '$10', gap: '$5'}}>
+                     <BoxIcon />
+                     <Flex direction={'column'}>
+                        <Text h4 weight={'medium'}>Строительство</Text>
+                        <Text span css={{maxWidth: '400px', color: '$accents8'}}>
+                           Цифровое управление проектами, Контроль сроков,
+                           Мобильная отчётность
+                        </Text>
+                     </Flex>
                   </Flex>
                </Flex>
-               <Flex
-                  css={{
-                     py: '$10',
-                     gap: '$5',
-                  }}
-               >
-                  <BoxIcon />
-                  <Flex direction={'column'}>
-                     <Text h4 weight={'medium'}>
-                        Your title here
-                     </Text>
-                     <Text
-                        span
-                        css={{
-                           maxWidth: '400px',
-                           color: '$accents8',
-                        }}
-                     >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed condimentum, nisl ut aliquam lacinia, nisl nisl
-                        aliquet nisl,
-                     </Text>
-                  </Flex>
-               </Flex>
-               <Flex
-                  css={{
-                     py: '$10',
-                     gap: '$5',
-                  }}
-               >
-                  <BoxIcon />
-                  <Flex direction={'column'}>
-                     <Text h4 weight={'medium'}>
-                        Your title here
-                     </Text>
-                     <Text
-                        span
-                        css={{
-                           maxWidth: '400px',
-                           color: '$accents8',
-                        }}
-                     >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed condimentum, nisl ut aliquam lacinia, nisl nisl
-                        aliquet nisl,
-                     </Text>
-                  </Flex>
-               </Flex>
+
             </Flex>
             <Flex align={'center'}>
                <FeatureIcon />
