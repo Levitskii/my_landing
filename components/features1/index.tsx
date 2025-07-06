@@ -1,4 +1,4 @@
-import {Button, Divider, Text} from '@nextui-org/react';
+import {Divider, Text} from '@nextui-org/react';
 import React from 'react';
 import {BoxIcon} from '../icons/BoxIcon';
 import {FeatureIcon} from '../icons/FeatureIcon';
@@ -26,8 +26,11 @@ export const Features1 = () => {
             }}
          >
             <Flex direction="column">
+               <Text span css={{color: '$blue600', textAlign: 'center'}}>
+                  Специализированные решения
+               </Text>
                <Text h3 css={{textAlign: 'center'}}>
-                  Специализированные решения для вашего бизнеса
+                  Для вашего бизнеса
                </Text>
                <Text
                   span
@@ -37,10 +40,8 @@ export const Features1 = () => {
                      textAlign: 'center',
                   }}
                >
-                  В какой бы отрасли вы не работали — от e-commerce до
-                  строительства. Мы быстро адаптируем каждое решение под конкретные
-                  процессы вашей компании, снижая издержки и ускоряя рост уже в
-                  первые недели без долгих внедрений.
+                  От e-commerce до строительства. Мы быстро адаптируем каждое
+                  решение под конкретные процессы вашей компании.
                </Text>
 
                <Flex direction="column">
@@ -86,7 +87,6 @@ export const Features1 = () => {
                   </Flex>
                </Flex>
 
-               <Button css={{mt: '$10'}}>Получить аудит</Button>
             </Flex>
             <Flex align={'center'}>
                <FeatureIcon />
