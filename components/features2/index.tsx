@@ -66,15 +66,6 @@ export const Features2 = () => {
             },
             '@media (min-width: 1280px)': {
               gridTemplateColumns: 'repeat(5, 1fr)',
-              '&::before': {
-                content: '',
-                position: 'absolute',
-                top: '46px',
-                left: 0,
-                right: 0,
-                height: '1px',
-                background: '$accents3',
-              },
             },
           }}
         >
@@ -91,25 +82,7 @@ export const Features2 = () => {
                 }}
               >
                 <Text css={{fontSize: '1.75rem'}}>{icon}</Text>
-                <Flex align={'center'} css={{gap: '$2'}}>
-                  <span
-                    style={{
-                      width: '26px',
-                      height: '26px',
-                      borderRadius: '50%',
-                      background: 'var(--nextui-colors-primary)',
-                      color: 'var(--nextui-colors-background)',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      fontWeight: 700,
-                      fontSize: '0.875rem',
-                    }}
-                  >
-                    {i + 1}
-                  </span>
-                  <Text h4 weight={'medium'}>{title}</Text>
-                </Flex>
+                <Text h4 weight={'medium'}>{title}</Text>
                 <Text span css={{color: '$accents8'}}>{text}</Text>
               </Flex>
               {i === 2 && (
