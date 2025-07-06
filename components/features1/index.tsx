@@ -25,19 +25,16 @@ export const Features1 = () => {
                },
             }}
          >
-            <Flex direction="column">
-               <Text span css={{color: '$blue600', textAlign: 'center'}}>
+            <Flex direction="column" css={{alignItems: 'flex-start'}}>
+               <Text span css={{color: '$blue600'}}>
                   Специализированные решения
                </Text>
-               <Text h3 css={{textAlign: 'center'}}>
-                  Для вашего бизнеса
-               </Text>
+               <Text h3>Для вашего бизнеса</Text>
                <Text
                   span
                   css={{
                      maxWidth: '400px',
                      color: '$accents8',
-                     textAlign: 'center',
                   }}
                >
                   От e-commerce до строительства. Мы быстро адаптируем каждое
