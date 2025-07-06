@@ -32,12 +32,19 @@ export const Plans = () => {
                     Разработка ПО
                   </Text>
                 </Grid>
+                <Grid xs={12}>
+                  <Text css={{ color: '$accents8' }}>
+                    Разрабатываем индивидуальные системы под ваши задачи
+                  </Text>
+                </Grid>
               </Grid.Container>
             </Card.Header>
             <Card.Body css={{ py: '$4' }}>
+              <Text css={{ display: 'contents', color: '$accents8' }}>от </Text>
               <Text css={{ display: 'contents' }} h2>
-                от 3х дней{' '}
+                3
               </Text>
+              <Text css={{ display: 'contents', color: '$accents8' }}>х дней</Text>
               <Button css={{ mt: '$7', mb: '$12' }}>Подробнее</Button>
 
               <Divider />
@@ -71,12 +78,19 @@ export const Plans = () => {
                     Бизнес-аналитика
                   </Text>
                 </Grid>
+                <Grid xs={12}>
+                  <Text css={{ color: '$accents8' }}>
+                    Данные превращаем в решения и прибыль
+                  </Text>
+                </Grid>
               </Grid.Container>
             </Card.Header>
             <Card.Body css={{ py: '$4' }}>
+              <Text css={{ display: 'contents', color: '$accents8' }}>от </Text>
               <Text css={{ display: 'contents' }} h2>
-                от 1 дня{' '}
+                1
               </Text>
+              <Text css={{ display: 'contents', color: '$accents8' }}> дня</Text>
               <Button css={{ mt: '$7', mb: '$12' }}>Подробнее</Button>
 
               <Divider />
@@ -110,12 +124,15 @@ export const Plans = () => {
                     Техническая поддержка
                   </Text>
                 </Grid>
+                <Grid xs={12}>
+                  <Text css={{ color: '$accents8' }}>
+                    Поддерживаем инфраструктуру, чтобы бизнес работал стабильно
+                  </Text>
+                </Grid>
               </Grid.Container>
             </Card.Header>
             <Card.Body css={{ py: '$4' }}>
-              <Text css={{ display: 'contents' }} h2>
-                с оплатой за месяц{' '}
-              </Text>
+              <Text css={{ display: 'contents', color: '$accents8' }}>с оплатой за месяц</Text>
               <Button css={{ mt: '$7', mb: '$12' }}>Подробнее</Button>
 
               <Divider />
@@ -156,9 +173,11 @@ export const Plans = () => {
                 Бесплатный экспресс-аудит 1-2 процессов с отчетом о точках роста и
                 расчетом экономии.
               </Text>
+              <Text css={{ display: 'contents', color: '$accents8' }}>от </Text>
               <Text css={{ display: 'contents' }} h2>
-                от 1 дня{' '}
+                1
               </Text>
+              <Text css={{ display: 'contents', color: '$accents8' }}> дня</Text>
               <Button css={{ mt: '$7', mb: '$12' }}>Заказать аудит</Button>
 
               <Divider />
