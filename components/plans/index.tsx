@@ -44,7 +44,7 @@ export const Plans = () => {
               <Text css={{ display: 'contents' }} h2>
                 3
               </Text>
-              <Text css={{ display: 'contents', color: '$accents8' }}>х дней</Text>
+              <Text css={{ display: 'contents', color: '$accents8' }}> х дней</Text>
               <Button css={{ mt: '$7', mb: '$12' }}>Подробнее</Button>
 
               <Divider />
@@ -80,7 +80,8 @@ export const Plans = () => {
                 </Grid>
                 <Grid xs={12}>
                   <Text css={{ color: '$accents8' }}>
-                    Данные превращаем в решения и прибыль
+                    Данные превращаем в решения, усиливая рост прибыли и
+                    конкурентные преимущества
                   </Text>
                 </Grid>
               </Grid.Container>
@@ -191,13 +192,13 @@ export const Plans = () => {
                 <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
                   <CheckIcon />
                   <Text span css={{ color: '$accents8' }}>
-                    оценка потенциала
+                    Оценка потенциала
                   </Text>
                 </Flex>
                 <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
                   <CheckIcon />
                   <Text span css={{ color: '$accents8' }}>
-                    проект решения
+                    Проект решения
                   </Text>
                 </Flex>
               </Box>
