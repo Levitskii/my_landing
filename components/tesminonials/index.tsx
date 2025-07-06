@@ -38,34 +38,31 @@ export const Testimonials = () => {
                         <Flex direction={'column'} css={{gap: '0.5rem'}}>
                            <Text
                               span
-                              css={{
-                                 maxWidth: '400px',
-                                 color: '$accents8',
-                              }}
-                           >
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                              elit. Sed condimentum, nisl ut aliquam lacinia,
-                              nisl nisl aliquet nisl,
-                           </Text>
-                           <Text
-                              span
                               weight={'bold'}
                               css={{
                                  maxWidth: '400px',
-                                 display: 'contents',
                                  color: '$accents9',
                               }}
                            >
-                              Jennifer Ford{' '}
+                              Репрайсинг для Wildberries
                            </Text>
                            <Text
                               span
                               css={{
-                                 display: 'contents',
+                                 maxWidth: '400px',
                                  color: '$accents8',
                               }}
                            >
-                              - CEO at Company
+                              Решение: Telegram-бот с алгоритмами ИИ
+                           </Text>
+                           <Text
+                              span
+                              css={{
+                                 maxWidth: '400px',
+                                 color: '$accents8',
+                              }}
+                           >
+                              Результат: Экономия 90% времени менеджеров
                            </Text>
                         </Flex>
                      </Flex>
@@ -84,34 +81,31 @@ export const Testimonials = () => {
                         <Flex direction={'column'} css={{gap: '0.5rem'}}>
                            <Text
                               span
-                              css={{
-                                 maxWidth: '400px',
-                                 color: '$accents8',
-                              }}
-                           >
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                              elit. Sed condimentum, nisl ut aliquam lacinia,
-                              nisl nisl aliquet nisl,
-                           </Text>
-                           <Text
-                              span
                               weight={'bold'}
                               css={{
                                  maxWidth: '400px',
-                                 display: 'contents',
                                  color: '$accents9',
                               }}
                            >
-                              Jennifer Ford{' '}
+                              BI-система для строймагазинов
                            </Text>
                            <Text
                               span
                               css={{
-                                 display: 'contents',
+                                 maxWidth: '400px',
                                  color: '$accents8',
                               }}
                            >
-                              - CEO at Company
+                              Решение: Единый дашборд с аналитикой
+                           </Text>
+                           <Text
+                              span
+                              css={{
+                                 maxWidth: '400px',
+                                 color: '$accents8',
+                              }}
+                           >
+                              Результат: Подготовка отчетов за 1 час вместо 5 дней
                            </Text>
                         </Flex>
                      </Flex>
@@ -130,34 +124,31 @@ export const Testimonials = () => {
                         <Flex direction={'column'} css={{gap: '0.5rem'}}>
                            <Text
                               span
-                              css={{
-                                 maxWidth: '400px',
-                                 color: '$accents8',
-                              }}
-                           >
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                              elit. Sed condimentum, nisl ut aliquam lacinia,
-                              nisl nisl aliquet nisl,
-                           </Text>
-                           <Text
-                              span
                               weight={'bold'}
                               css={{
                                  maxWidth: '400px',
-                                 display: 'contents',
                                  color: '$accents9',
                               }}
                            >
-                              Jennifer Ford{' '}
+                              Автоматизация завода
                            </Text>
                            <Text
                               span
                               css={{
-                                 display: 'contents',
+                                 maxWidth: '400px',
                                  color: '$accents8',
                               }}
                            >
-                              - CEO at Company
+                              Решение: Система прогноза поломок
+                           </Text>
+                           <Text
+                              span
+                              css={{
+                                 maxWidth: '400px',
+                                 color: '$accents8',
+                              }}
+                           >
+                              Результат: Снижение простоев на 40%
                            </Text>
                         </Flex>
                      </Flex>
@@ -175,16 +166,14 @@ export const Testimonials = () => {
                }}
             >
                <Text span css={{color: '$blue600'}}>
-                  Awesome Feature
+                  Примеры работ
                </Text>
-               <Text h3>Testimonials</Text>
+               <Text h3>Реальные результаты клиентов</Text>
                <Text span css={{color: '$accents8', maxW: '600px', pb: '$8'}}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  condimentum, nisl ut aliquam lacinia, nisl nisl aliquet nisl,
-                  nec tincidunt nisl lorem eu nunc. Sed euismod, nisl ut aliquam
-                  lacinia,
+                  Ниже приведены проекты, в которых мы помогли компаниям
+                  сократить издержки и ускорить процессы.
                </Text>
-               <Button>Read case studies</Button>
+               <Button>Читать кейсы</Button>
             </Flex>
          </Flex>
 
