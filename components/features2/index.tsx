@@ -49,29 +49,34 @@ export const Features2 = () => {
         </Flex>
 
         <Flex
-          justify={'between'}
-          wrap={'wrap'}
-            css={{
-              'gap': '$10',
-              'position': 'relative',
-              'px': '$2',
-              'maxWidth': '1000px',
-              'width': '100%',
-              '@sm': {
-                '&::before': {
-                  content: '',
-                  position: 'absolute',
-                  top: '36px',
-                  left: '5%',
-                  right: '5%',
-                  height: '1px',
-                  background: '$accents3',
-                },
+          css={{
+            'gap': '$10',
+            'position': 'relative',
+            'px': '$2',
+            'maxWidth': '1000px',
+            'width': '100%',
+            'display': 'grid',
+            'justifyItems': 'center',
+            'gridTemplateColumns': '1fr',
+            '@media (min-width: 612px)': {
+              gridTemplateColumns: 'repeat(2, 1fr)',
+            },
+            '@media (min-width: 1000px)': {
+              gridTemplateColumns: 'repeat(3, 1fr)',
+            },
+            '@media (min-width: 1280px)': {
+              gridTemplateColumns: 'repeat(5, 1fr)',
+              '&::before': {
+                content: '',
+                position: 'absolute',
+                top: '46px',
+                left: 0,
+                right: 0,
+                height: '1px',
+                background: '$accents3',
               },
-              '@lg': {
-                '&::before': { display: 'none' },
-              },
-            }}
+            },
+          }}
         >
           {steps.map(({icon, title, text}, i) => (
             <React.Fragment key={i}>
@@ -83,25 +88,40 @@ export const Features2 = () => {
                   'maxWidth': '160px',
                   'gap': '$4',
                   'position': 'relative',
-                  'flexBasis': '100%',
-                  '@sm': {flexBasis: '33.33%'},
-                  '@lg': {flexBasis: '20%'},
                 }}
               >
                 <Text css={{fontSize: '1.75rem'}}>{icon}</Text>
-                <Text h4 weight={'medium'}>{title}</Text>
-                <Text span css={{color: '$accents8'}}>{text}</Text>
-              </Flex>
-                {i === 2 && (
-                  <Flex
-                    css={{
-                      'flexBasis': '100%',
-                      'justifyContent': 'center',
-                      'display': 'none',
-                      '@sm': {display: 'flex'},
-                      '@lg': {display: 'none'},
+                <Flex align={'center'} css={{gap: '$2'}}>
+                  <span
+                    style={{
+                      width: '26px',
+                      height: '26px',
+                      borderRadius: '50%',
+                      background: 'var(--nextui-colors-primary)',
+                      color: 'var(--nextui-colors-background)',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      fontWeight: 700,
+                      fontSize: '0.875rem',
                     }}
                   >
+                    {i + 1}
+                  </span>
+                  <Text h4 weight={'medium'}>{title}</Text>
+                </Flex>
+                <Text span css={{color: '$accents8'}}>{text}</Text>
+              </Flex>
+              {i === 2 && (
+                <Flex
+                  css={{
+                    'gridColumn': '1 / -1',
+                    'justifyContent': 'center',
+                    'display': 'none',
+                    '@media (min-width: 1000px)': {display: 'flex'},
+                    '@media (min-width: 1280px)': {display: 'none'},
+                  }}
+                >
                   <div
                     style={{
                       width: '12px',
