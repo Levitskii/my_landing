@@ -1,4 +1,4 @@
-import {Button, Divider, Text} from '@nextui-org/react';
+import {Divider, Text} from '@nextui-org/react';
 import React from 'react';
 import {Flex} from '../styles/flex';
 
@@ -51,6 +51,7 @@ export const Features2 = () => {
         <Flex
           css={{
             'gap': '$10',
+            'rowGap': '$12',
             'position': 'relative',
             'px': '$2',
             'maxWidth': '1000px',
@@ -60,12 +61,15 @@ export const Features2 = () => {
             'gridTemplateColumns': '1fr',
             '@media (min-width: 612px)': {
               gridTemplateColumns: 'repeat(2, 1fr)',
+              justifyContent: 'center',
             },
             '@media (min-width: 1000px)': {
               gridTemplateColumns: 'repeat(3, 1fr)',
+              justifyContent: 'initial',
             },
             '@media (min-width: 1280px)': {
               gridTemplateColumns: 'repeat(5, 1fr)',
+              rowGap: '$10',
             },
           }}
         >
@@ -85,13 +89,15 @@ export const Features2 = () => {
                 <Text h4 weight={'medium'}>{title}</Text>
                 <Text span css={{color: '$accents8'}}>{text}</Text>
               </Flex>
-              {i === 2 && (
+              {i < steps.length - 1 && (
                 <Flex
                   css={{
                     'gridColumn': '1 / -1',
                     'justifyContent': 'center',
                     'display': 'none',
-                    '@media (min-width: 1000px)': {display: 'flex'},
+                    '@media (max-width: 611px)': {display: 'flex'},
+                    '@media (min-width: 612px)': {display: i === 1 || i === 3 ? 'flex' : 'none'},
+                    '@media (min-width: 1000px)': {display: i === 2 ? 'flex' : 'none'},
                     '@media (min-width: 1280px)': {display: 'none'},
                   }}
                 >
@@ -111,7 +117,6 @@ export const Features2 = () => {
           ))}
         </Flex>
 
-        <Button css={{mt: '$8'}}>Получить бесплатный аудит</Button>
       </Flex>
       <Divider css={{position: 'absolute', inset: '0p', left: '0', mt: '$5'}} />
     </>
