@@ -1,114 +1,124 @@
-import {Button, Divider, Text} from '@nextui-org/react';
+import {Divider, Text} from '@nextui-org/react';
 import React from 'react';
-import {BoxIcon} from '../icons/BoxIcon';
-import {FeatureIcon} from '../icons/FeatureIcon';
 import {Flex} from '../styles/flex';
 
+const steps = [
+  {
+    icon: '🔍',
+    title: 'Бесплатная диагностика',
+    text: 'Анализ 1-2 процессов, оценка потенциала',
+  },
+  {
+    icon: '⚡',
+    title: 'Прототипирование',
+    text: 'Рабочий MVP за 3 дня',
+  },
+  {
+    icon: '💻',
+    title: 'Разработка',
+    text: 'Поэтапное внедрение модулей',
+  },
+  {
+    icon: '🚀',
+    title: 'Запуск',
+    text: 'Обучение сотрудников и поддержка',
+  },
+  {
+    icon: '📈',
+    title: 'Анализ эффективности',
+    text: 'Отчёт по достижению KPI',
+  },
+];
+
 export const Features2 = () => {
-   return (
-      <>
-         <Flex
-            direction={'column'}
-            css={{
-               'gap': '1rem',
-               'pt': '$20',
-               'justifyContent': 'center',
-               'alignItems': 'center',
-               'px': '$6',
+  return (
+    <>
+      <Flex
+        direction={'column'}
+        css={{
+          'gap': '$10',
+          'pt': '$20',
+          'px': '$6',
+          'alignItems': 'center',
+          '@sm': { px: '$16' },
+        }}
+      >
+        <Flex direction="column" align={'center'} css={{gap: '$2'}}>
+          <Text span css={{color: '$blue600'}}>5 шагов к результату</Text>
+          <Text h3 css={{textAlign: 'center'}}>Как мы работаем</Text>
+        </Flex>
 
-               '@sm': {
-                  gap: '5rem',
-                  flexDirection: 'row-reverse',
-                  px: '$16',
-               },
-               '@md': {
-                  justifyContent: 'space-evenly',
-               },
-            }}
-         >
-            <Flex direction="column" align={'center'}>
-               <Text span css={{color: '$blue600'}}>
-                  Awesome Feature
-               </Text>
-               <Text h3>Your title here</Text>
-               <Text
-                  span
+        <Flex
+          css={{
+            'gap': '$10',
+            'rowGap': '$12',
+            'position': 'relative',
+            'px': '$2',
+            'maxWidth': '1000px',
+            'width': '100%',
+            'display': 'grid',
+            'justifyItems': 'center',
+            'gridTemplateColumns': '1fr',
+            '@media (min-width: 612px)': {
+              gridTemplateColumns: 'repeat(2, 1fr)',
+              justifyContent: 'center',
+            },
+            '@media (min-width: 1000px)': {
+              gridTemplateColumns: 'repeat(3, 1fr)',
+              justifyContent: 'initial',
+            },
+            '@media (min-width: 1280px)': {
+              gridTemplateColumns: 'repeat(5, 1fr)',
+              rowGap: '$10',
+            },
+          }}
+        >
+          {steps.map(({icon, title, text}, i) => (
+            <React.Fragment key={i}>
+              <Flex
+                direction={'column'}
+                align={'center'}
+                css={{
+                  'textAlign': 'center',
+                  'maxWidth': '160px',
+                  'gap': '$4',
+                  'position': 'relative',
+                }}
+              >
+                <Text css={{fontSize: '1.75rem'}}>{icon}</Text>
+                <Text h4 weight={'medium'}>{title}</Text>
+                <Text span css={{color: '$accents8'}}>{text}</Text>
+              </Flex>
+              {i < steps.length - 1 && (
+                <Flex
                   css={{
-                     maxWidth: '400px',
-                     color: '$accents8',
+                    'gridColumn': '1 / -1',
+                    'justifyContent': 'center',
+                    'display': 'none',
+                    '@media (max-width: 611px)': {display: 'flex'},
+                    '@media (min-width: 612px)': {display: i === 1 || i === 3 ? 'flex' : 'none'},
+                    '@media (min-width: 1000px)': {display: i === 2 ? 'flex' : 'none'},
+                    '@media (min-width: 1280px)': {display: 'none'},
                   }}
-               >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  condimentum, nisl ut aliquam lacinia, nisl nisl aliquet nisl,
-                  nec tincidunt nisl lorem eu nunc. Sed euismod, nisl ut aliquam
-                  lacinia,
-               </Text>
+                >
+                  <div
+                    style={{
+                      width: '12px',
+                      height: '12px',
+                      borderRight: '1px solid',
+                      borderBottom: '1px solid',
+                      borderColor: 'var(--nextui-colors-accents3)',
+                      transform: 'rotate(45deg)',
+                    }}
+                  />
+                </Flex>
+              )}
+            </React.Fragment>
+          ))}
+        </Flex>
 
-               <Flex
-                  justify={'center'}
-                  wrap={'wrap'}
-                  css={{
-                     py: '$10',
-                  }}
-               >
-                  <Flex
-                     css={{
-                        py: '$10',
-                        gap: '$5',
-                     }}
-                  >
-                     <BoxIcon />
-                     <Flex direction={'column'}>
-                        <Text h4 weight={'medium'}>
-                           Your title here
-                        </Text>
-                        <Text
-                           span
-                           css={{
-                              maxWidth: '325px',
-                              color: '$accents8',
-                           }}
-                        >
-                           Lorem ipsum dolor sit amet, consectetur adipiscing
-                           elit. Sed condimentum, nisl ut aliquam lacinia, nisl
-                           nisl aliquet nisl,
-                        </Text>
-                     </Flex>
-                  </Flex>
-                  <Flex
-                     css={{
-                        py: '$10',
-                        gap: '$5',
-                     }}
-                  >
-                     <BoxIcon />
-                     <Flex direction={'column'}>
-                        <Text h4 weight={'medium'}>
-                           Your title here
-                        </Text>
-                        <Text
-                           span
-                           css={{
-                              maxWidth: '325px',
-                              color: '$accents8',
-                           }}
-                        >
-                           Lorem ipsum dolor sit amet, consectetur adipiscing
-                           elit. Sed condimentum, nisl ut aliquam lacinia, nisl
-                           nisl aliquet nisl,
-                        </Text>
-                     </Flex>
-                  </Flex>
-               </Flex>
-            </Flex>
-            <Flex align={'center'}>
-               <FeatureIcon />
-            </Flex>
-         </Flex>
-
-         <Divider
-            css={{position: 'absolute', inset: '0p', left: '0', mt: '$5'}}
-         />
-      </>
-   );
+      </Flex>
+      <Divider css={{position: 'absolute', inset: '0p', left: '0', mt: '$5'}} />
+    </>
+  );
 };
