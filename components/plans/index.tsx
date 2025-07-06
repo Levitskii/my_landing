@@ -35,6 +35,12 @@ export const Plans = () => {
               </Grid.Container>
             </Card.Header>
             <Card.Body css={{ py: '$4' }}>
+              <Text css={{ display: 'contents' }} h2>
+                от 3х дней{' '}
+              </Text>
+              <Button css={{ mt: '$7', mb: '$12' }}>Подробнее</Button>
+
+              <Divider />
               <Box as={'ul'}>
                 <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
                   <CheckIcon />
@@ -68,6 +74,12 @@ export const Plans = () => {
               </Grid.Container>
             </Card.Header>
             <Card.Body css={{ py: '$4' }}>
+              <Text css={{ display: 'contents' }} h2>
+                от 1 дня{' '}
+              </Text>
+              <Button css={{ mt: '$7', mb: '$12' }}>Подробнее</Button>
+
+              <Divider />
               <Box as={'ul'}>
                 <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
                   <CheckIcon />
@@ -101,6 +113,12 @@ export const Plans = () => {
               </Grid.Container>
             </Card.Header>
             <Card.Body css={{ py: '$4' }}>
+              <Text css={{ display: 'contents' }} h2>
+                с оплатой за месяц{' '}
+              </Text>
+              <Button css={{ mt: '$7', mb: '$12' }}>Подробнее</Button>
+
+              <Divider />
               <Box as={'ul'}>
                 <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
                   <CheckIcon />
@@ -138,7 +156,32 @@ export const Plans = () => {
                 Бесплатный экспресс-аудит 1-2 процессов с отчетом о точках роста и
                 расчетом экономии.
               </Text>
-              <Button css={{ mt: '$4' }}>Заказать аудит</Button>
+              <Text css={{ display: 'contents' }} h2>
+                от 1 дня{' '}
+              </Text>
+              <Button css={{ mt: '$7', mb: '$12' }}>Заказать аудит</Button>
+
+              <Divider />
+              <Box as={'ul'}>
+                <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
+                  <CheckIcon />
+                  <Text span css={{ color: '$accents8' }}>
+                    Анализ 1-2 процессов
+                  </Text>
+                </Flex>
+                <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
+                  <CheckIcon />
+                  <Text span css={{ color: '$accents8' }}>
+                    оценка потенциала
+                  </Text>
+                </Flex>
+                <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
+                  <CheckIcon />
+                  <Text span css={{ color: '$accents8' }}>
+                    проект решения
+                  </Text>
+                </Flex>
+              </Box>
             </Card.Body>
           </Card>
         </Flex>
