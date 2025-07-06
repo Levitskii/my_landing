@@ -52,9 +52,10 @@ export const Features2 = () => {
           justify={'between'}
           wrap={'wrap'}
           css={{
-            'gap': '$12',
+            'gap': '$10',
             'position': 'relative',
-            'maxWidth': '900px',
+            'px': '$2',
+            'maxWidth': '1000px',
             'width': '100%',
             '@md': {
               '&::before': {
@@ -70,39 +71,47 @@ export const Features2 = () => {
           }}
         >
           {steps.map(({icon, title, text}, i) => (
-            <Flex
-              key={i}
-              direction={'column'}
-              align={'center'}
-              css={{
-                'textAlign': 'center',
-                'maxWidth': '160px',
-                'gap': '$4',
-                'position': 'relative',
-              }}
-            >
+            <React.Fragment key={i}>
               <Flex
+                direction={'column'}
+                align={'center'}
                 css={{
-                  'position': 'absolute',
-                  'top': 0,
-                  'left': '50%',
-                  'transform': 'translate(-50%, -50%)',
-                  'width': '26px',
-                  'height': '26px',
-                  'borderRadius': '$lg',
-                  'background': '$blue600',
-                  'color': 'White',
-                  'fontWeight': '$bold',
-                  'alignItems': 'center',
-                  'justifyContent': 'center',
+                  'textAlign': 'center',
+                  'maxWidth': '160px',
+                  'gap': '$4',
+                  'position': 'relative',
+                  'flexBasis': '20%',
+                  '@md': {flexBasis: '33.33%'},
+                  '@sm': {flexBasis: '100%'},
                 }}
               >
-                {i + 1}
+                <Text css={{fontSize: '1.75rem'}}>{icon}</Text>
+                <Text h4 weight={'medium'}>{title}</Text>
+                <Text span css={{color: '$accents8'}}>{text}</Text>
               </Flex>
-              <Text css={{fontSize: '1.75rem'}}>{icon}</Text>
-              <Text h4 weight={'medium'}>{title}</Text>
-              <Text span css={{color: '$accents8'}}>{text}</Text>
-            </Flex>
+              {i === 2 && (
+                <Flex
+                  css={{
+                    'flexBasis': '100%',
+                    'justifyContent': 'center',
+                    'display': 'none',
+                    '@md': {display: 'flex'},
+                    '@sm': {display: 'none'},
+                  }}
+                >
+                  <div
+                    style={{
+                      width: '12px',
+                      height: '12px',
+                      borderRight: '1px solid',
+                      borderBottom: '1px solid',
+                      borderColor: 'var(--nextui-colors-accents3)',
+                      transform: 'rotate(45deg)',
+                    }}
+                  />
+                </Flex>
+              )}
+            </React.Fragment>
           ))}
         </Flex>
 
