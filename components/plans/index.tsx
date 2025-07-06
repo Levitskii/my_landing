@@ -1,4 +1,4 @@
-import { Button, Card, Divider, Grid, Link, Text } from '@nextui-org/react';
+import { Button, Card, Divider, Grid, Text } from '@nextui-org/react';
 import React from 'react';
 import { CheckIcon } from '../icons/CheckIcon';
 import { Box } from '../styles/box';
@@ -133,7 +133,11 @@ export const Plans = () => {
               </Grid.Container>
             </Card.Header>
             <Card.Body css={{ py: '$4' }}>
-              <Text css={{ display: 'contents', color: '$accents8' }}>с оплатой за месяц</Text>
+              <Text css={{ display: 'contents', color: '$accents8' }}>от </Text>
+              <Text css={{ display: 'contents' }} h2>
+                1
+              </Text>
+              <Text css={{ display: 'contents', color: '$accents8' }}> месяца</Text>
               <Button css={{ mt: '$7', mb: '$12' }}>Подробнее</Button>
 
               <Divider />
