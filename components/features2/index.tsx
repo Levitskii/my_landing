@@ -51,24 +51,27 @@ export const Features2 = () => {
         <Flex
           justify={'between'}
           wrap={'wrap'}
-          css={{
-            'gap': '$10',
-            'position': 'relative',
-            'px': '$2',
-            'maxWidth': '1000px',
-            'width': '100%',
-            '@md': {
-              '&::before': {
-                content: '',
-                position: 'absolute',
-                top: '36px',
-                left: '5%',
-                right: '5%',
-                height: '1px',
-                background: '$accents3',
+            css={{
+              'gap': '$10',
+              'position': 'relative',
+              'px': '$2',
+              'maxWidth': '1000px',
+              'width': '100%',
+              '@sm': {
+                '&::before': {
+                  content: '',
+                  position: 'absolute',
+                  top: '36px',
+                  left: '5%',
+                  right: '5%',
+                  height: '1px',
+                  background: '$accents3',
+                },
               },
-            },
-          }}
+              '@lg': {
+                '&::before': { display: 'none' },
+              },
+            }}
         >
           {steps.map(({icon, title, text}, i) => (
             <React.Fragment key={i}>
@@ -80,25 +83,25 @@ export const Features2 = () => {
                   'maxWidth': '160px',
                   'gap': '$4',
                   'position': 'relative',
-                  'flexBasis': '20%',
-                  '@md': {flexBasis: '33.33%'},
-                  '@sm': {flexBasis: '100%'},
+                  'flexBasis': '100%',
+                  '@sm': {flexBasis: '33.33%'},
+                  '@lg': {flexBasis: '20%'},
                 }}
               >
                 <Text css={{fontSize: '1.75rem'}}>{icon}</Text>
                 <Text h4 weight={'medium'}>{title}</Text>
                 <Text span css={{color: '$accents8'}}>{text}</Text>
               </Flex>
-              {i === 2 && (
-                <Flex
-                  css={{
-                    'flexBasis': '100%',
-                    'justifyContent': 'center',
-                    'display': 'none',
-                    '@md': {display: 'flex'},
-                    '@sm': {display: 'none'},
-                  }}
-                >
+                {i === 2 && (
+                  <Flex
+                    css={{
+                      'flexBasis': '100%',
+                      'justifyContent': 'center',
+                      'display': 'none',
+                      '@sm': {display: 'flex'},
+                      '@lg': {display: 'none'},
+                    }}
+                  >
                   <div
                     style={{
                       width: '12px',
