@@ -30,14 +30,6 @@ export const Footer = () => {
                   direction={'column'}
                   align={'start'}
                >
-                  <AcmeLogo />
-                    <Box as={'ul'} css={{gap: '$5', listStyle: 'none'}}></Box>
-               </Flex>
-               <Flex
-                  css={{gap: '$5', w: '250px', textAlign: 'left'}}
-                  direction={'column'}
-                  align={'start'}
-               >
                     <Box as={'ul'} css={{gap: '$5', listStyle: 'none'}}></Box>
                </Flex>
                <Flex
