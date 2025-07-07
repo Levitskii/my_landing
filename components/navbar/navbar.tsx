@@ -3,7 +3,13 @@ import React from 'react';
 import {AcmeLogo} from './logo';
 
 export const Nav = () => {
-   const collapseItems = ['Услуги', 'Решения', 'Кейсы', 'Процесс', 'Контакты'];
+   const items = [
+      {label: 'Услуги', href: '#services'},
+      {label: 'Решения', href: '#solutions'},
+      {label: 'Кейсы', href: '#cases'},
+      {label: 'Процесс', href: '#process'},
+      {label: 'Контакты', href: '#contacts'},
+   ];
    return (
       <Navbar
          isBordered
@@ -27,25 +33,25 @@ export const Nav = () => {
                   pl: '6rem',
                }}
             >
-               {collapseItems.map((item) => (
-                  <Navbar.Link key={item} href="#">
-                     {item}
+               {items.map(({label, href}) => (
+                  <Navbar.Link key={label} href={href} css={{cursor: 'pointer'}}>
+                     {label}
                   </Navbar.Link>
                ))}
                </Navbar.Content>
          </Navbar.Brand>
 
          <Navbar.Collapse>
-            {collapseItems.map((item, index) => (
-               <Navbar.CollapseItem key={item}>
+            {items.map(({label, href}) => (
+               <Navbar.CollapseItem key={label}>
                   <Link
                      color="inherit"
                      css={{
                         minWidth: '100%',
                      }}
-                     href="#"
+                     href={href}
                   >
-                     {item}
+                     {label}
                   </Link>
                </Navbar.CollapseItem>
             ))}
@@ -53,7 +59,7 @@ export const Nav = () => {
          </Navbar.Collapse>
          <Navbar.Content>
             <Navbar.Item>
-               <Button auto flat href="#">
+               <Button auto flat href="#audit" css={{cursor: 'pointer'}}>
                   Бесплатный аудит
                </Button>
             </Navbar.Item>
