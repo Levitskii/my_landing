@@ -14,7 +14,7 @@ export const Footer = () => {
       >
          <Box as={'footer'} css={{width: '100%'}}>
             <Flex
-               justify={'center'}
+               justify={'start'}
                wrap={'wrap'}
                align={'center'}
                css={{
@@ -26,25 +26,24 @@ export const Footer = () => {
                }}
             >
                <Flex
-                  css={{gap: '$5', w: '250px'}}
+                  css={{gap: '$5', w: '250px', textAlign: 'left'}}
                   direction={'column'}
-                  align={'center'}
+                  align={'start'}
                >
                   <AcmeLogo />
                     <Box as={'ul'} css={{gap: '$5', listStyle: 'none'}}></Box>
                </Flex>
                <Flex
-                  css={{gap: '$5', w: '250px'}}
+                  css={{gap: '$5', w: '250px', textAlign: 'left'}}
                   direction={'column'}
-                  align={'center'}
+                  align={'start'}
                >
-                  <Text h5>Resources</Text>
                     <Box as={'ul'} css={{gap: '$5', listStyle: 'none'}}></Box>
                </Flex>
                <Flex
-                  css={{gap: '$5', w: '250px'}}
+                  css={{gap: '$5', w: '250px', textAlign: 'left'}}
                   direction={'column'}
-                  align={'center'}
+                  align={'start'}
                >
                   <Text h5>Контакты</Text>
                   <Box as={'ul'} css={{gap: '$5', listStyle: 'none'}}>
@@ -66,9 +65,9 @@ export const Footer = () => {
                   </Box>
                </Flex>
                <Flex
-                  css={{gap: '$5', w: '250px'}}
+                  css={{gap: '$5', w: '250px', textAlign: 'left'}}
                   direction={'column'}
-                  align={'center'}
+                  align={'start'}
                >
                   <Text h5>Реквизиты</Text>
                   <Box as={'ul'} css={{gap: '$5', listStyle: 'none'}}>
@@ -90,11 +89,10 @@ export const Footer = () => {
                   </Box>
                </Flex>
                <Flex
-                  css={{gap: '$5', w: '250px'}}
+                  css={{gap: '$5', w: '250px', textAlign: 'left'}}
                   direction={'column'}
-                  align={'center'}
+                  align={'start'}
                >
-                  <Text h5>Press</Text>
                     <Box as={'ul'} css={{gap: '$5', listStyle: 'none'}}></Box>
                </Flex>
             </Flex>
@@ -155,7 +153,7 @@ export const Footer = () => {
                      }}
                   >
                      <Text span css={{color: '$accents8'}}>
-                        © Copyright 2021 Acme Inc.
+                        © Copyright 2025 ИП Левицкий АА
                      </Text>
                   </Flex>
                </Flex>
