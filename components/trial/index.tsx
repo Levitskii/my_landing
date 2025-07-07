@@ -14,7 +14,7 @@ export const Trial = () => {
             direction={'column'}
             align={'center'}
          >
-            <Text h3>Start your free trials</Text>
+            <Text h3>Закажите бесплатный аудит процессов</Text>
             <Text
                span
                css={{
@@ -23,11 +23,11 @@ export const Trial = () => {
                   textAlign: 'center',
                }}
             >
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-               condimentum, nisl
+               Оценим 1–2 ключевые операции, покажем точки роста и экономию
+               уже через 24 часа.
             </Text>
 
-            <Button>Button</Button>
+            <Button>Получить аудит бесплатно</Button>
          </Flex>
 
          <Divider
