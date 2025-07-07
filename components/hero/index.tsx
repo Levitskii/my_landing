@@ -41,12 +41,12 @@ export const Hero = () => {
                      maxWidth: '600px',
                   }}
                >
-                  <Text h1 css={{display: 'inline', fontSize: '2.5rem'}}>
-                    Автоматизация бизнеса с искусственным интеллектом:
+                  <Text h1 css={{display: 'inline', fontSize: '2.75rem'}}>
+                    Автоматизация бизнеса с ИИ:
                     <br />
                   </Text>
-                  <Text h1 css={{display: 'inline', fontSize: '2.5rem'}} color="primary">
-                    + 90% к эффективности
+                  <Text h1 css={{display: 'inline', fontSize: '2.75rem'}} color="primary">
+                    + 90% к росту
                     <br />
                     - 30% затрат
                   </Text>
