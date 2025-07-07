@@ -14,7 +14,7 @@ export const Footer = () => {
       >
          <Box as={'footer'} css={{width: '100%'}}>
             <Flex
-               justify={'center'}
+               justify={'start'}
                wrap={'wrap'}
                align={'center'}
                css={{
@@ -26,149 +26,66 @@ export const Footer = () => {
                }}
             >
                <Flex
-                  css={{gap: '$5', w: '250px'}}
+                  css={{gap: '$5', w: '250px', textAlign: 'left'}}
                   direction={'column'}
-                  align={'center'}
+                  align={'start'}
                >
-                  <AcmeLogo />
+                    <Box as={'ul'} css={{gap: '$5', listStyle: 'none'}}></Box>
+               </Flex>
+               <Flex
+                  css={{gap: '$5', w: '250px', textAlign: 'left'}}
+                  direction={'column'}
+                  align={'start'}
+               >
+                  <Text h5>Контакты</Text>
                   <Box as={'ul'} css={{gap: '$5', listStyle: 'none'}}>
                      <Box as={'li'}>
                         <Text span css={{color: '$accents8'}}>
-                           First Link
+                           Телефон: +79167582357
                         </Text>
                      </Box>
                      <Box as={'li'}>
                         <Text span css={{color: '$accents8'}}>
-                           Second Link
+                           Telegram: @ela_msk
                         </Text>
                      </Box>
                      <Box as={'li'}>
                         <Text span css={{color: '$accents8'}}>
-                           Third Link
-                        </Text>
-                     </Box>
-                     <Box as={'li'}>
-                        <Text span css={{color: '$accents8'}}>
-                           Forth Link
+                           Почта: AlexandrLevitskii@yandex.ru
                         </Text>
                      </Box>
                   </Box>
                </Flex>
                <Flex
-                  css={{gap: '$5', w: '250px'}}
+                  css={{gap: '$5', w: '250px', textAlign: 'left'}}
                   direction={'column'}
-                  align={'center'}
+                  align={'start'}
                >
-                  <Text h5>Resources</Text>
+                  <Text h5>Реквизиты</Text>
                   <Box as={'ul'} css={{gap: '$5', listStyle: 'none'}}>
                      <Box as={'li'}>
                         <Text span css={{color: '$accents8'}}>
-                           First Link
+                           ИП Левицкий Александр Андреевич
                         </Text>
                      </Box>
                      <Box as={'li'}>
                         <Text span css={{color: '$accents8'}}>
-                           Second Link
+                           ОГРН&nbsp;ИП&nbsp;322237500446854
                         </Text>
                      </Box>
                      <Box as={'li'}>
                         <Text span css={{color: '$accents8'}}>
-                           Third Link
-                        </Text>
-                     </Box>
-                     <Box as={'li'}>
-                        <Text span css={{color: '$accents8'}}>
-                           Forth Link
+                           ИНН&nbsp;231131991457
                         </Text>
                      </Box>
                   </Box>
                </Flex>
                <Flex
-                  css={{gap: '$5', w: '250px'}}
+                  css={{gap: '$5', w: '250px', textAlign: 'left'}}
                   direction={'column'}
-                  align={'center'}
+                  align={'start'}
                >
-                  <Text h5>Contact</Text>
-                  <Box as={'ul'} css={{gap: '$5', listStyle: 'none'}}>
-                     <Box as={'li'}>
-                        <Text span css={{color: '$accents8'}}>
-                           First Link
-                        </Text>
-                     </Box>
-                     <Box as={'li'}>
-                        <Text span css={{color: '$accents8'}}>
-                           Second Link
-                        </Text>
-                     </Box>
-                     <Box as={'li'}>
-                        <Text span css={{color: '$accents8'}}>
-                           Third Link
-                        </Text>
-                     </Box>
-                     <Box as={'li'}>
-                        <Text span css={{color: '$accents8'}}>
-                           Forth Link
-                        </Text>
-                     </Box>
-                  </Box>
-               </Flex>
-               <Flex
-                  css={{gap: '$5', w: '250px'}}
-                  direction={'column'}
-                  align={'center'}
-               >
-                  <Text h5>Legal</Text>
-                  <Box as={'ul'} css={{gap: '$5', listStyle: 'none'}}>
-                     <Box as={'li'}>
-                        <Text span css={{color: '$accents8'}}>
-                           First Link
-                        </Text>
-                     </Box>
-                     <Box as={'li'}>
-                        <Text span css={{color: '$accents8'}}>
-                           Second Link
-                        </Text>
-                     </Box>
-                     <Box as={'li'}>
-                        <Text span css={{color: '$accents8'}}>
-                           Third Link
-                        </Text>
-                     </Box>
-                     <Box as={'li'}>
-                        <Text span css={{color: '$accents8'}}>
-                           Forth Link
-                        </Text>
-                     </Box>
-                  </Box>
-               </Flex>
-               <Flex
-                  css={{gap: '$5', w: '250px'}}
-                  direction={'column'}
-                  align={'center'}
-               >
-                  <Text h5>Press</Text>
-                  <Box as={'ul'} css={{gap: '$5', listStyle: 'none'}}>
-                     <Box as={'li'}>
-                        <Text span css={{color: '$accents8'}}>
-                           First Link
-                        </Text>
-                     </Box>
-                     <Box as={'li'}>
-                        <Text span css={{color: '$accents8'}}>
-                           Second Link
-                        </Text>
-                     </Box>
-                     <Box as={'li'}>
-                        <Text span css={{color: '$accents8'}}>
-                           Third Link
-                        </Text>
-                     </Box>
-                     <Box as={'li'}>
-                        <Text span css={{color: '$accents8'}}>
-                           Forth Link
-                        </Text>
-                     </Box>
-                  </Box>
+                    <Box as={'ul'} css={{gap: '$5', listStyle: 'none'}}></Box>
                </Flex>
             </Flex>
             <Box
@@ -228,7 +145,7 @@ export const Footer = () => {
                      }}
                   >
                      <Text span css={{color: '$accents8'}}>
-                        © Copyright 2021 Acme Inc.
+                        © Copyright 2025 ИП Левицкий АА
                      </Text>
                   </Flex>
                </Flex>
