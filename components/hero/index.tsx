@@ -7,6 +7,16 @@ import {Flex} from '../styles/flex';
 export const Hero = () => {
    return (
       <>
+         <Box
+            css={{
+               pt: '$13',
+               textAlign: 'center',
+            }}
+         >
+            <Text h1 css={{display: 'inline', fontSize: '3.025rem'}}>
+               Автоматизация бизнеса с ИИ:
+            </Text>
+         </Box>
          <Flex
             css={{
                'gap': '$3',
@@ -29,8 +39,6 @@ export const Hero = () => {
          >
             <Box
                css={{
-                  pt: '$13',
-
                   display: 'flex',
                   flexDirection: 'column',
                   gap: '$5',
@@ -41,10 +49,6 @@ export const Hero = () => {
                      maxWidth: '600px',
                   }}
                >
-                  <Text h1 css={{display: 'inline', fontSize: '2.75rem'}}>
-                    Автоматизация бизнеса с ИИ:
-                    <br />
-                  </Text>
                   <Text h1 css={{display: 'inline', fontSize: '2.75rem'}} color="primary">
                     + 90% к росту
                     <br />
