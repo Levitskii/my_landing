@@ -14,7 +14,7 @@ export const Hero = () => {
             }}
          >
             <Text h1 css={{display: 'inline', fontSize: '3.025rem'}}>
-               Автоматизация бизнеса с ИИ:
+               Автоматизация бизнеса с ИИ
             </Text>
          </Box>
          <Flex
@@ -28,7 +28,7 @@ export const Hero = () => {
                'width': '100%',
                '@sm': {
                   flexDirection: 'row',
-                  mt: '$20',
+                  mt: '$7',
                   px: '$32',
                },
                '@md': {
